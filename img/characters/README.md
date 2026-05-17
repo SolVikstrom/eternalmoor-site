@@ -4,8 +4,10 @@ Drop portrait images here for the **Characters** tab on the campaign site.
 
 | File | Character |
 |------|-----------|
-| `aril.png` | Aril |
-| `inky.png` | Inky |
+| `Aril000.png` | Aril (portrait slot) |
+| `Inky000.png` | Inky (portrait slot — add when ready) |
+
+Use numbered exports (`000`, `001`, …) as you render more poses. Full-body shots can get their own section later.
 
 **Tips**
 - Portrait orientation works best (~3:4 ratio, e.g. 520×693 px or larger).
