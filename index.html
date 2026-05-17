@@ -208,6 +208,154 @@
             margin: 0 0.4em;
         }
 
+        /* CHARACTERS — spotlight cards */
+        .character-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 0.5rem;
+        }
+
+        .character-spotlight {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+            gap: 1.75rem;
+            align-items: center;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .character-spotlight::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 70% 55% at 15% 50%, rgba(255, 144, 0, 0.07), transparent 65%);
+            pointer-events: none;
+        }
+
+        .character-spotlight--inky {
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        }
+
+        .character-spotlight--inky::before {
+            background: radial-gradient(ellipse 70% 55% at 85% 50%, rgba(196, 188, 162, 0.08), transparent 65%);
+        }
+
+        .character-spotlight--inky .character-visual {
+            order: 2;
+        }
+
+        .character-spotlight--inky .character-copy {
+            order: 1;
+        }
+
+        .character-visual {
+            position: relative;
+            z-index: 1;
+        }
+
+        .character-frame {
+            position: relative;
+            aspect-ratio: 3 / 4;
+            max-height: 340px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 260px;
+            transform: rotate(-2.5deg);
+            transition: transform 0.25s ease;
+        }
+
+        .character-spotlight--inky .character-frame {
+            transform: rotate(2.5deg);
+        }
+
+        .character-spotlight:hover .character-frame {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .character-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            border-radius: 4px;
+            border: 2px solid var(--color-highlight);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+            background: linear-gradient(160deg, #1e2019 0%, #121310 100%);
+        }
+
+        .character-frame.is-missing .character-img {
+            display: none;
+        }
+
+        .character-frame.is-missing {
+            background: linear-gradient(160deg, #22241f 0%, #141512 100%);
+            border: 2px dashed var(--color-border);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .character-frame.is-missing::after {
+            content: 'Add portrait in\A img/characters/' attr(data-file);
+            white-space: pre;
+            text-align: center;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: var(--color-dim);
+            padding: 1rem;
+        }
+
+        .character-name-tag {
+            position: absolute;
+            bottom: -0.35rem;
+            left: -0.5rem;
+            font-family: var(--font-sticky);
+            font-size: 2.75rem;
+            letter-spacing: 2px;
+            color: var(--color-highlight);
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .character-spotlight--inky .character-name-tag {
+            left: auto;
+            right: -0.5rem;
+            text-align: right;
+        }
+
+        .character-copy {
+            position: relative;
+            z-index: 1;
+            padding: 0.25rem 0;
+        }
+
+        .character-copy h3 {
+            font-family: var(--font-sticky);
+            font-size: 1.35rem;
+            color: var(--color-accent);
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .character-copy p {
+            color: var(--color-dim);
+            font-size: 0.95rem;
+            margin-bottom: 0.85rem;
+            line-height: 1.55;
+        }
+
+        .character-copy p:last-child {
+            margin-bottom: 0;
+        }
+
         footer {
             text-align: center;
             margin-top: 4rem;
@@ -249,6 +397,21 @@
             }
             .grid-placeholders {
                 grid-template-columns: 1fr;
+            }
+            .character-spotlight,
+            .character-spotlight--inky {
+                grid-template-columns: 1fr;
+            }
+            .character-spotlight--inky .character-visual,
+            .character-spotlight--inky .character-copy {
+                order: unset;
+            }
+            .character-frame {
+                max-width: 220px;
+                transform: rotate(0deg);
+            }
+            .character-name-tag {
+                font-size: 2.25rem;
             }
         }
     </style>
@@ -320,18 +483,49 @@
         </div>
 
         <div id="characters" class="tab-content">
-            <div class="grid-placeholders">
-                <div class="placeholder-box">
-                    <h3>Aril</h3>
-                    <p>Driven by a deep longing to finally peek into the <span class="highlight">Backstages</span> of reality, Aril is determined to return Inky to the <span class="highlight">Blackbird</span>. She will jump, climb, swing, and reach for what matters, craving answers to the greater questions of the universe.</p>
-                    <p>Explore her <span class="highlight">Tangled Thought Space</span>, contemplate with her on <span class="highlight">meditation rocks</span>, solve riddles, and search for the true meaning of life.</p>
-                </div>
-                <div class="placeholder-box">
-                    <h3>Inky</h3>
-                    <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a <span class="highlight">Blackbird</span>'s inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
-                </div>
+            <div class="character-showcase">
+
+                <article class="character-spotlight character-spotlight--aril">
+                    <div class="character-visual">
+                        <div class="character-frame" data-file="aril.png">
+                            <img
+                                src="img/characters/aril.png"
+                                alt="Aril, apprentice of the Moor"
+                                class="character-img"
+                                width="520"
+                                height="693"
+                                onerror="this.closest('.character-frame').classList.add('is-missing')">
+                            <span class="character-name-tag" aria-hidden="true">Aril</span>
+                        </div>
+                    </div>
+                    <div class="character-copy">
+                        <h3>The restless seeker</h3>
+                        <p>Driven by a deep longing to finally peek into the <span class="highlight">Backstages</span> of reality, Aril is determined to return Inky to the <span class="highlight">Blackbird</span>. She will jump, climb, swing, and reach for what matters, craving answers to the greater questions of the universe.</p>
+                        <p>Explore her <span class="highlight">Tangled Thought Space</span>, contemplate with her on <span class="highlight">meditation rocks</span>, solve riddles, and search for the true meaning of life.</p>
+                    </div>
+                </article>
+
+                <article class="character-spotlight character-spotlight--inky">
+                    <div class="character-visual">
+                        <div class="character-frame" data-file="inky.png">
+                            <img
+                                src="img/characters/inky.png"
+                                alt="Inky, spirit of the inkwell heart"
+                                class="character-img"
+                                width="520"
+                                height="693"
+                                onerror="this.closest('.character-frame').classList.add('is-missing')">
+                            <span class="character-name-tag" aria-hidden="true">Inky</span>
+                        </div>
+                    </div>
+                    <div class="character-copy">
+                        <h3>The chaotic detour</h3>
+                        <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a <span class="highlight">Blackbird</span>'s inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
+                    </div>
+                </article>
+
             </div>
-        </div>
+
 
         <div id="the-dev" class="tab-content">
             <div class="grid-placeholders">
