@@ -4,12 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eternalmoor</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sticky&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
-        body { background: #111; color: #eee; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        h1 { font-weight: 300; letter-spacing: 2px; }
+        :root {
+            --font-sticky: 'Sticky', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --color-bg: #111210;
+            --color-text: #e3e4e0;
+            --color-dim: #9a9c96;
+            --color-accent: #c4bca2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero-sektion med Tagline */
+        header {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #222320;
+        }
+
+        .title {
+            font-family: var(--font-sticky);
+            font-size: 4rem;
+            letter-spacing: 4px;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            max-width: 800px;
+            color: var(--color-accent);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        /* Huvudinnehåll / Synopsis-flöde */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .synopsis-block {
+            margin-bottom: 6rem;
+        }
+
+        .synopsis-block p {
+            font-size: 1.2rem;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+            max-width: 750px;
+        }
+
+        /* Grafik & Karaktärs-placeholders */
+        .placeholder-container {
+            width: 100%;
+            margin: 3rem 0;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #1c1d1a;
+            border: 1px solid #333530;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-dim);
+            border-radius: 4px;
+        }
+
+        .image-placeholder span {
+            font-family: var(--font-sticky);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            color: var(--color-accent);
+        }
+
+        .image-placeholder p {
+            font-size: 0.9rem;
+            color: var(--color-dim);
+        }
+
+        /* Tvåkolumns-layout för karaktärer/detaljer */
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-section {
+                grid-template-columns: 1fr;
+            }
+            .title {
+                font-size: 2.5rem;
+            }
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            font-size: 0.9rem;
+            color: var(--color-dim);
+            border-top: 1px solid #222320;
+        }
     </style>
 </head>
 <body>
-    <h1>Eternalmoor - Coming Soon</h1>
+
+    <header>
+        <h1 class="title">Eternalmoor</h1>
+        <p class="tagline">A Blackbird puts his heart in Aril's care, asking her to return it into the backstages of reality; an invitation. But every backstage pass has a cost.</p>
+    </header>
+
+    <main>
+        
+        <div class="synopsis-block">
+            <p>In a realm where looming theaters lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
+            <p>All she needs to do is let Inky lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between Eternalmoor and beyond.</p>
+        </div>
+
+        <div class="placeholder-container">
+            <div class="image-placeholder">
+                <span>[ ENVIRONMENT GRAPHIC PLACEHOLDER ]</span>
+                <p>E.g., Memorial Grove or The Looming Theater</p>
+            </div>
+        </div>
+
+        <div class="synopsis-block">
+            <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
+            <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
+        </div>
+
+        <div class="grid-section">
+            <div>
+                <div class="image-placeholder" style="aspect-ratio: 1 / 1;">
+                    <span>[ ARIL & INKY ]</span>
+                    <p>Character Sprite / Art Placeholder</p>
+                </div>
+            </div>
+            <div>
+                <div class="image-placeholder" style="aspect-ratio: 1 / 1;">
+                    <span>[ SOUNDSCAPES / MECHANICS ]</span>
+                    <p>Gameplay / UI Graphic Placeholder</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="synopsis-block" style="margin-top: 4rem;">
+            <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eternalmoor. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
