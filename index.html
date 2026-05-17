@@ -208,6 +208,192 @@
             margin: 0 0.4em;
         }
 
+
+        /* MECHANICS — cinematic layout */
+        .mechanics-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 2.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .mechanics-hero {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            aspect-ratio: 16 / 9;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+            background: linear-gradient(155deg, #1e2019 0%, #0f100e 100%);
+        }
+
+        .mechanics-hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .mechanics-hero.is-missing-bg .mechanics-hero-bg {
+            display: none;
+        }
+
+        .mechanics-hero.is-missing-bg::after {
+            content: 'Add img/mechanics/Room000.png';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-dim);
+            font-size: 0.85rem;
+            z-index: 0;
+        }
+
+        .mechanics-hero-scrim {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(17, 18, 16, 0.94) 0%,
+                rgba(17, 18, 16, 0.4) 50%,
+                rgba(17, 18, 16, 0.12) 100%
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .dialogue-panel {
+            position: absolute;
+            left: 50%;
+            bottom: 1.35rem;
+            transform: translateX(-50%);
+            width: min(94%, 720px);
+            z-index: 2;
+            background: rgba(24, 25, 22, 0.94);
+            border: 2px solid var(--color-highlight);
+            border-radius: 6px;
+            padding: 1.5rem 1.85rem 1.65rem;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        }
+
+        .dialogue-panel::before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            left: 2.25rem;
+            width: 16px;
+            height: 16px;
+            background: rgba(24, 25, 22, 0.94);
+            border-left: 2px solid var(--color-highlight);
+            border-top: 2px solid var(--color-highlight);
+            transform: rotate(45deg);
+        }
+
+        .dialogue-label {
+            display: block;
+            font-family: var(--font-sticky);
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            color: var(--color-highlight);
+            margin-bottom: 0.65rem;
+        }
+
+        .dialogue-panel p {
+            color: var(--color-text);
+            font-size: 1.05rem;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .mechanics-echo {
+            display: grid;
+            grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
+            gap: 1.75rem;
+            align-items: center;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 1.5rem 1.75rem;
+        }
+
+        .mechanics-echo-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mechanics-echo-frame {
+            width: 100%;
+            max-width: 210px;
+            aspect-ratio: 1;
+        }
+
+        .mechanics-echo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.55));
+        }
+
+        .mechanics-echo-frame.is-missing {
+            border: 2px dashed var(--color-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: var(--color-dim);
+            padding: 1rem;
+            filter: none;
+        }
+
+        .mechanics-echo-frame.is-missing .mechanics-echo-img {
+            display: none;
+        }
+
+        .mechanics-echo-frame.is-missing::after {
+            content: 'Add Echo000.png';
+        }
+
+        .mechanics-echo-copy h3 {
+            font-family: var(--font-sticky);
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .mechanics-echo-copy p {
+            color: var(--color-dim);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .mechanics-drivers {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 2rem;
+        }
+
+        .mechanics-drivers h3 {
+            font-family: var(--font-sticky);
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .mechanics-drivers > p {
+            color: var(--color-dim);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
         /* CHARACTERS — spotlight cards */
         .character-showcase {
             display: flex;
@@ -413,6 +599,28 @@
             .character-name-tag {
                 font-size: 2.25rem;
             }
+            .mechanics-hero {
+                aspect-ratio: 4 / 3;
+                min-height: 220px;
+            }
+            .dialogue-panel {
+                width: 92%;
+                padding: 1.15rem 1.25rem 1.25rem;
+                bottom: 0.85rem;
+            }
+            .dialogue-label {
+                font-size: 1.15rem;
+            }
+            .dialogue-panel p {
+                font-size: 0.95rem;
+            }
+            .mechanics-echo {
+                grid-template-columns: 1fr;
+            }
+            .mechanics-echo-frame {
+                max-width: 150px;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -447,16 +655,38 @@
         </div>
 
         <div id="mechanics" class="tab-content">
-            <div class="grid-placeholders">
-                <div class="placeholder-box">
-                    <h3>You are in the room</h3>
-                    <p><span class="highlight">Aril</span> speaks through the screen to you — for advice, argument, and quiet company. Help her move objects, weigh dilemmas, and shape the tone of the journey.</p>
-                </div>
-                <div class="placeholder-box">
-                    <h3>Memories that weigh on you</h3>
-                    <p><span class="highlight">Echoes</span> are memories with weight — some lift you, some pull you down — and they change how the world sounds and feels to move through.</p>
-                </div>
-                <div class="placeholder-box placeholder-box--wide">
+            <div class="mechanics-flow">
+
+                <section class="mechanics-hero" id="mechanics-hero">
+                    <img
+                        class="mechanics-hero-bg"
+                        src="img/mechanics/Room000.png"
+                        alt="Eternalmoor — Aril speaks to you through the screen"
+                        onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
+                    <div class="mechanics-hero-scrim" aria-hidden="true"></div>
+                    <div class="dialogue-panel">
+                        <span class="dialogue-label">You are in the room</span>
+                        <p><span class="highlight">Aril</span> speaks through the screen to you — for advice, argument, and quiet company. Help her move objects, weigh dilemmas, and shape the tone of the journey.</p>
+                    </div>
+                </section>
+
+                <section class="mechanics-echo">
+                    <div class="mechanics-echo-visual">
+                        <div class="mechanics-echo-frame">
+                            <img
+                                class="mechanics-echo-img"
+                                src="img/mechanics/Echo000.png"
+                                alt="An Echo — a memory made visible"
+                                onerror="this.closest('.mechanics-echo-frame').classList.add('is-missing')">
+                        </div>
+                    </div>
+                    <div class="mechanics-echo-copy">
+                        <h3>Memories that weigh on you</h3>
+                        <p><span class="highlight">Echoes</span> are memories with weight — some lift you, some pull you down — and they change how the world sounds and feels to move through.</p>
+                    </div>
+                </section>
+
+                <section class="mechanics-drivers">
                     <h3>Four forces behind every choice</h3>
                     <p>Story beats orbit four primary emotional drivers: a positive drive vs. a corresponding fear.</p>
                     <ul class="driver-list">
@@ -478,9 +708,10 @@
                         </li>
                     </ul>
                     <p>Quests grow from small tasks to moments that leave a mark. Win or stumble, <span class="highlight">the Weave of Echoes</span> remembers.</p>
-                </div>
+                </section>
+
             </div>
-        </div>
+
 
         <div id="characters" class="tab-content">
             <div class="character-showcase">
