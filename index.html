@@ -41,7 +41,6 @@
             font-weight: bold;
         }
 
-        /* HEADER & HERO - Mer kompakt */
         header {
             padding: 3rem 2rem 1.5rem 2rem;
             text-align: center;
@@ -64,7 +63,6 @@
             line-height: 1.4;
         }
 
-        /* CONTAINER FÖR HUVUDBILD */
         .hero-image-container {
             max-width: 800px;
             margin: 0 auto 2rem auto;
@@ -79,7 +77,6 @@
             border: 1px solid var(--color-border);
         }
 
-        /* TAB MENY */
         .tabs-container {
             max-width: 800px;
             margin: 0 auto;
@@ -115,7 +112,6 @@
             border-bottom: 2px solid var(--color-highlight);
         }
 
-        /* INNEHÅLLS-SEKTIONER */
         .tab-content {
             display: none;
             animation: fadeIn 0.3s ease-in-out;
@@ -130,14 +126,12 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* LÖPTEXT & STRUKTUR */
         .prose-block p {
             font-size: 1.1rem;
             margin-bottom: 1.25rem;
             max-width: 750px;
         }
 
-        /* PLACEHOLDERS FÖR GEKOPPLADE FLIKAR */
         .grid-placeholders {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -156,15 +150,64 @@
         .placeholder-box h3 {
             font-family: var(--font-sticky);
             color: var(--color-accent);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
 
         .placeholder-box p {
             color: var(--color-dim);
             font-size: 0.95rem;
+            margin-bottom: 0.75rem;
         }
 
-        /* SOCIAL MEDIA LINKS & FOOTER */
+        .placeholder-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .placeholder-box--wide {
+            grid-column: 1 / -1;
+        }
+
+        .driver-list {
+            list-style: none;
+            margin: 0 0 1rem 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+
+        .driver-list li {
+            padding: 0.85rem 1rem 0.85rem 1.1rem;
+            background: rgba(0, 0, 0, 0.22);
+            border-left: 3px solid var(--color-highlight);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .driver-name {
+            display: block;
+            font-family: var(--font-sticky);
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            color: var(--color-highlight);
+            margin-bottom: 0.35rem;
+        }
+
+        .driver-pair {
+            display: block;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--color-dim);
+        }
+
+        .driver-pair .vs {
+            color: var(--color-accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin: 0 0.4em;
+        }
+
         footer {
             text-align: center;
             margin-top: 4rem;
@@ -250,16 +293,28 @@
                     <h3>Memories that weigh on you</h3>
                     <p><span class="highlight">Echoes</span> are memories with weight — some lift you, some pull you down — and they change how the world sounds and feels to move through.</p>
                 </div>
-                <div class="placeholder-box">
+                <div class="placeholder-box placeholder-box--wide">
                     <h3>Four forces behind every choice</h3>
-                    <p>Story beats orbit four primary emotional drivers: a positive drive vs. a corresponding fear.
-
-- Hope: that things can be okay vs. fear of being stuck in an unpleasant status quo.
-- Curiosity: drive to know and experience the unknown vs. fear of harm, disappointment, or leaving the comfort zone.
-- Creativity: Drive to express and realize the self vs. fear of failure, misinterpretation, or not meeting standards.
-- Love: Drive for meaningful bonds vs. fear of loss, rejection, or harming others.
-                        
-                        Quests grow from small tasks to moments that leave a mark. Win or stumble, The Weave of Echoes remembers.</p>
+                    <p>Story beats orbit four primary emotional drivers: a positive drive vs. a corresponding fear.</p>
+                    <ul class="driver-list">
+                        <li>
+                            <span class="driver-name">Hope</span>
+                            <span class="driver-pair">That things can be okay <span class="vs">vs</span> fear of being stuck in an unpleasant status quo.</span>
+                        </li>
+                        <li>
+                            <span class="driver-name">Curiosity</span>
+                            <span class="driver-pair">Drive to know and experience the unknown <span class="vs">vs</span> fear of harm, disappointment, or leaving the comfort zone.</span>
+                        </li>
+                        <li>
+                            <span class="driver-name">Creativity</span>
+                            <span class="driver-pair">Drive to express and realize the self <span class="vs">vs</span> fear of failure, misinterpretation, or not meeting standards.</span>
+                        </li>
+                        <li>
+                            <span class="driver-name">Love</span>
+                            <span class="driver-pair">Drive for meaningful bonds <span class="vs">vs</span> fear of loss, rejection, or harming others.</span>
+                        </li>
+                    </ul>
+                    <p>Quests grow from small tasks to moments that leave a mark. Win or stumble, <span class="highlight">the Weave of Echoes</span> remembers.</p>
                 </div>
             </div>
         </div>
@@ -268,11 +323,12 @@
             <div class="grid-placeholders">
                 <div class="placeholder-box">
                     <h3>Aril</h3>
-                    <p>The restless seeker who walks Eternalmoor — jump, climb, swing, and reach what matters, craving answers to the greater questions of the universe.</p>
+                    <p>The restless seeker who walks <span class="highlight">Eternalmoor</span> — jump, climb, swing, and reach what matters, craving answers to the greater questions of the universe.</p>
                 </div>
                 <div class="placeholder-box">
                     <h3>Inky</h3>
-                    <p>The spirit of a <span class="highlight">Blackbird</span>'s inkwell heart; far more interested in the detour than the destination. Inky exists to experience the fullness of existence — whether as a soaring bat, a humping butterfly, or a neuron firing in a petri dish. When their priorities clash, you help decide what happens next.</p>
+                    <p>The spirit of a <span class="highlight">Blackbird</span>'s inkwell heart; far more interested in the detour than the destination. Inky exists to experience the fullness of existence — whether as a soaring bat, a humping butterfly, or a neuron firing in a petri dish.</p>
+                    <p>When their priorities clash, you help decide what happens next.</p>
                 </div>
             </div>
         </div>
@@ -312,20 +368,17 @@
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             
-            // Dölj allt innehåll
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
                 tabcontent[i].classList.remove("active");
             }
 
-            // Inaktivera alla tab-knappar
             tablinks = document.getElementsByClassName("tab-btn");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active");
             }
 
-            // Visa det valda innehållet och markera knappen som aktiv
             document.getElementById(tabName).style.display = "block";
             setTimeout(function() {
                 document.getElementById(tabName).classList.add("active");
