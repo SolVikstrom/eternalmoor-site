@@ -14,6 +14,8 @@
             --font-sticky: 'Sticky', sans-serif;
             --font-sans: 'Plus Jakarta Sans', sans-serif;
             --color-bg: #111210;
+            --color-card: #181916;
+            --color-border: #2a2c27;
             --color-text: #e3e4e0;
             --color-dim: #9a9c96;
             --color-accent: #c4bca2;
@@ -30,126 +32,181 @@
             background-color: var(--color-bg);
             color: var(--color-text);
             font-family: var(--font-sans);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 1.5;
+            padding-bottom: 4rem;
         }
 
-        /* Nyckelord formaterade som i spelet */
         .highlight {
             color: var(--color-highlight);
             font-weight: bold;
         }
 
-        /* Hero-sektion med Tagline */
+        /* HEADER & HERO - Mer kompakt */
         header {
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem 1.5rem 2rem;
             text-align: center;
-            border-bottom: 1px solid #222320;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .title {
             font-family: var(--font-sticky);
-            font-size: 4rem;
-            letter-spacing: 4px;
-            color: var(--color-text);
-            margin-bottom: 2rem;
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
             text-transform: uppercase;
         }
 
         .tagline {
-            font-size: 1.5rem;
-            max-width: 800px;
+            font-size: 1.25rem;
             color: var(--color-accent);
             font-weight: 300;
-            margin-bottom: 1.5rem;
             line-height: 1.4;
         }
 
-        /* Huvudinnehåll / Synopsis-flöde */
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 6rem 2rem;
+        /* CONTAINER FÖR HUVUDBILD */
+        .hero-image-container {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            padding: 0 1rem;
         }
 
-        .synopsis-block {
-            margin-bottom: 6rem;
-        }
-
-        .synopsis-block p {
-            font-size: 1.2rem;
-            color: var(--color-text);
-            margin-bottom: 2rem;
-            max-width: 750px;
-        }
-
-        /* Bild-styling för uppladdade bilder */
         .showcase-image {
             width: 100%;
             height: auto;
             display: block;
-            margin: 3rem 0 6rem 0;
             border-radius: 4px;
-            border: 1px solid #333530;
+            border: 1px solid var(--color-border);
         }
 
-        /* Grafik & Karaktärs-placeholders */
-        .image-placeholder {
-            width: 100%;
-            background: #1c1d1a;
-            border: 1px solid #333530;
+        /* TAB MENY */
+        .tabs-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .tabs-menu {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-dim);
-            border-radius: 4px;
+            gap: 0.5rem;
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 2rem;
         }
 
-        .image-placeholder span {
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--color-dim);
             font-family: var(--font-sticky);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s;
             letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            color: var(--color-accent);
+            border-bottom: 2px solid transparent;
         }
 
-        .image-placeholder p {
-            font-size: 0.9rem;
-            color: var(--color-dim);
+        .tab-btn:hover {
+            color: var(--color-text);
         }
 
-        /* Tvåkolumns-layout för karaktärer/detaljer */
-        .grid-section {
+        .tab-btn.active {
+            color: var(--color-highlight);
+            border-bottom: 2px solid var(--color-highlight);
+        }
+
+        /* INNEHÅLLS-SEKTIONER */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* LÖPTEXT & STRUKTUR */
+        .prose-block p {
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            max-width: 750px;
+        }
+
+        /* PLACEHOLDERS FÖR GEKOPPLADE FLIKAR */
+        .grid-placeholders {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
 
-        @media (max-width: 768px) {
-            .grid-section {
-                grid-template-columns: 1fr;
-            }
-            .title {
-                font-size: 2.5rem;
-            }
-            .tagline {
-                font-size: 1.2rem;
-            }
+        .placeholder-box {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            padding: 2rem;
+            border-radius: 4px;
+            text-align: center;
         }
 
+        .placeholder-box h3 {
+            font-family: var(--font-sticky);
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .placeholder-box p {
+            color: var(--color-dim);
+            font-size: 0.95rem;
+        }
+
+        /* SOCIAL MEDIA LINKS & FOOTER */
         footer {
             text-align: center;
-            padding: 4rem 2rem;
-            font-size: 0.9rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-icon {
+            fill: var(--color-dim);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.2s;
+        }
+
+        .social-icon:hover {
+            fill: var(--color-highlight);
+        }
+
+        .copyright {
+            font-size: 0.85rem;
             color: var(--color-dim);
-            border-top: 1px solid #222320;
+        }
+
+        @media (max-width: 600px) {
+            .tabs-menu {
+                flex-wrap: wrap;
+                gap: 0;
+            }
+            .tab-btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 0.75rem;
+            }
+            .grid-placeholders {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -160,44 +217,105 @@
         <p class="tagline">A <span class="highlight">Blackbird</span> puts his heart in <span class="highlight">Aril</span>'s care, asking her to return it into the backstages of reality; an invitation. <br>But every backstage pass has a cost.</p>
     </header>
 
-    <main>
-        
-        <div class="synopsis-block">
-            <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
-            <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond.</p>
-        </div>
-
+    <div class="hero-image-container">
         <img src="img/20251102-musings-from-eternalmoor-theatre-ext-1024x576.png" alt="The Looming Theater Exterior" class="showcase-image">
+    </div>
 
-        <div class="synopsis-block">
-            <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
-            <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
+    <div class="tabs-container">
+        
+        <nav class="tabs-menu">
+            <button class="tab-btn active" onclick="openTab(event, 'the-quest')">The Quest</button>
+            <button class="tab-btn" onclick="openTab(event, 'mechanics')">Mechanics</button>
+            <button class="tab-btn" onclick="openTab(event, 'characters')">Characters</button>
+            <button class="tab-btn" onclick="openTab(event, 'the-dev')">The Dev</button>
+        </nav>
+
+        <div id="the-quest" class="tab-content active">
+            <div class="prose-block">
+                <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
+                <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond.</p>
+                <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
+                <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
+                <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
+            </div>
         </div>
 
-        <div class="grid-section">
-            <div>
-                <div class="image-placeholder" style="aspect-ratio: 1 / 1;">
-                    <span>[ ARIL & INKY ]</span>
-                    <p>Character Sprite / Art Placeholder</p>
+        <div id="mechanics" class="tab-content">
+            <div class="grid-placeholders">
+                <div class="placeholder-box">
+                    <h3>Conversational Logic</h3>
+                    <p>Pitchdeck data: Info about traits, choices, and dialogue mechanics.</p>
+                </div>
+                <div class="placeholder-box">
+                    <h3>Gathering Experiences</h3>
+                    <p>Pitchdeck data: How the player balances the horrors against the wonders of life.</p>
                 </div>
             </div>
-            <div>
-                <div class="image-placeholder" style="aspect-ratio: 1 / 1;">
-                    <span>[ SOUNDSCAPES / MECHANICS ]</span>
-                    <p>Gameplay / UI Graphic Placeholder</p>
+        </div>
+
+        <div id="characters" class="tab-content">
+            <div class="grid-placeholders">
+                <div class="placeholder-box">
+                    <h3>Aril</h3>
+                    <p>The apprentice on a quest into the Backstages.</p>
+                </div>
+                <div class="placeholder-box">
+                    <h3>Inky</h3>
+                    <p>The chaotic heart-spirit far more interested in the journey than the destination.</p>
                 </div>
             </div>
         </div>
 
-        <div class="synopsis-block" style="margin-top: 4rem;">
-            <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
+        <div id="the-dev" class="tab-content">
+            <div class="placeholder-box">
+                <h3>Behind the Moor</h3>
+                <p>Pitchdeck data: Development insights, built using Unity and Blender.</p>
+            </div>
         </div>
 
-    </main>
+        <footer>
+            <div class="social-links">
+                <a href="https://instagram.com/DITT_ANVÄNDARNAMN" target="_blank" aria-label="Follow Eternalmoor on Instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/DITT_ANVÄNDARNAMN" target="_blank" aria-label="Follow Eternalmoor on YouTube">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Eternalmoor. All rights reserved.</p>
+        </footer>
 
-    <footer>
-        <p>&copy; 2026 Eternalmoor. All rights reserved.</p>
-    </footer>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            // Dölj allt innehåll
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Inaktivera alla tab-knappar
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // Visa det valda innehållet och markera knappen som aktiv
+            document.getElementById(tabName).style.display = "block";
+            setTimeout(function() {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 
 </body>
 </html>
