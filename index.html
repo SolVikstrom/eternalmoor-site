@@ -380,6 +380,7 @@
             border: 1px solid var(--color-border);
             border-radius: 6px;
             padding: 2rem;
+            overflow: hidden;
         }
 
         .mechanics-drivers h3 {
@@ -393,6 +394,75 @@
             color: var(--color-dim);
             font-size: 0.95rem;
             margin-bottom: 1rem;
+        }
+        .mechanics-drivers-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 0.42fr);
+            gap: 1.25rem 1.75rem;
+            align-items: start;
+        }
+
+        .mechanics-drivers-content h3 {
+            font-family: var(--font-sticky);
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .mechanics-drivers-content > p {
+            color: var(--color-dim);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .mechanics-drivers-visual {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 0.5rem;
+        }
+
+        .mechanics-driver-frame {
+            width: 100%;
+            max-width: 240px;
+            transform: rotate(7deg);
+            transition: transform 0.25s ease;
+        }
+
+        .mechanics-drivers:hover .mechanics-driver-frame {
+            transform: rotate(3deg) scale(1.02);
+        }
+
+        .mechanics-driver-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 2px solid var(--color-highlight);
+            border-radius: 4px;
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+
+        .mechanics-driver-frame.is-missing {
+            aspect-ratio: 4 / 3;
+            border: 2px dashed var(--color-border);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(7deg);
+            font-size: 0.75rem;
+            color: var(--color-dim);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .mechanics-driver-frame.is-missing .mechanics-driver-img {
+            display: none;
+        }
+
+        .mechanics-driver-frame.is-missing::after {
+            content: 'Add Driver000.png';
         }
         /* CHARACTERS — spotlight cards */
         .character-showcase {
@@ -621,6 +691,18 @@
                 max-width: 150px;
                 margin: 0 auto;
             }
+            .mechanics-drivers-layout {
+                grid-template-columns: 1fr;
+            }
+            .mechanics-drivers-visual {
+                order: -1;
+                padding-top: 0;
+                margin-bottom: 0.5rem;
+            }
+            .mechanics-driver-frame {
+                max-width: 200px;
+                transform: rotate(4deg);
+            }
         }
     </style>
 </head>
@@ -687,27 +769,40 @@
                 </section>
 
                 <section class="mechanics-drivers">
-                    <h3>Four forces behind every choice</h3>
-                    <p>Story beats orbit four primary emotional drivers: a positive drive vs. a corresponding fear.</p>
-                    <ul class="driver-list">
-                        <li>
-                            <span class="driver-name">Hope</span>
-                            <span class="driver-pair">That things can be okay <span class="vs">vs</span> fear of being stuck in an unpleasant status quo.</span>
-                        </li>
-                        <li>
-                            <span class="driver-name">Curiosity</span>
-                            <span class="driver-pair">Drive to know and experience the unknown <span class="vs">vs</span> fear of harm, disappointment, or leaving the comfort zone.</span>
-                        </li>
-                        <li>
-                            <span class="driver-name">Creativity</span>
-                            <span class="driver-pair">Drive to express and realize the self <span class="vs">vs</span> fear of failure, misinterpretation, or not meeting standards.</span>
-                        </li>
-                        <li>
-                            <span class="driver-name">Love</span>
-                            <span class="driver-pair">Drive for meaningful bonds <span class="vs">vs</span> fear of loss, rejection, or harming others.</span>
-                        </li>
-                    </ul>
-                    <p>Quests grow from small tasks to moments that leave a mark. Win or stumble, <span class="highlight">the Weave of Echoes</span> remembers.</p>
+                    <div class="mechanics-drivers-layout">
+                        <div class="mechanics-drivers-content">
+                            <h3>Four forces behind every choice</h3>
+                            <p>Story beats orbit four primary emotional drivers: a positive drive vs. a corresponding fear.</p>
+                            <ul class="driver-list">
+                                <li>
+                                    <span class="driver-name">Hope</span>
+                                    <span class="driver-pair">That things can be okay <span class="vs">vs</span> fear of being stuck in an unpleasant status quo.</span>
+                                </li>
+                                <li>
+                                    <span class="driver-name">Curiosity</span>
+                                    <span class="driver-pair">Drive to know and experience the unknown <span class="vs">vs</span> fear of harm, disappointment, or leaving the comfort zone.</span>
+                                </li>
+                                <li>
+                                    <span class="driver-name">Creativity</span>
+                                    <span class="driver-pair">Drive to express and realize the self <span class="vs">vs</span> fear of failure, misinterpretation, or not meeting standards.</span>
+                                </li>
+                                <li>
+                                    <span class="driver-name">Love</span>
+                                    <span class="driver-pair">Drive for meaningful bonds <span class="vs">vs</span> fear of loss, rejection, or harming others.</span>
+                                </li>
+                            </ul>
+                            <p>Quests grow from small tasks to moments that leave a mark. Win or stumble, <span class="highlight">the Weave of Echoes</span> remembers.</p>
+                        </div>
+                        <div class="mechanics-drivers-visual">
+                            <div class="mechanics-driver-frame">
+                                <img
+                                    class="mechanics-driver-img"
+                                    src="img/mechanics/Driver000.png"
+                                    alt="A driver — the forces that move the story"
+                                    onerror="this.closest('.mechanics-driver-frame').classList.add('is-missing')">
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
             </div>
