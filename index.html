@@ -17,6 +17,7 @@
             --color-text: #e3e4e0;
             --color-dim: #9a9c96;
             --color-accent: #c4bca2;
+            --color-highlight: #FF9000;
         }
 
         * {
@@ -31,6 +32,12 @@
             font-family: var(--font-sans);
             line-height: 1.6;
             overflow-x: hidden;
+        }
+
+        /* Nyckelord formaterade som i spelet */
+        .highlight {
+            color: var(--color-highlight);
+            font-weight: bold;
         }
 
         /* Hero-sektion med Tagline */
@@ -146,14 +153,14 @@
 
     <header>
         <h1 class="title">Eternalmoor</h1>
-        <p class="tagline">A Blackbird puts his heart in Aril's care, asking her to return it into the backstages of reality; an invitation. But every backstage pass has a cost.</p>
+        <p class="tagline">A <span class="highlight">Blackbird</span> puts his heart in <span class="highlight">Aril</span>'s care, asking her to return it into the backstages of reality; an invitation. But every backstage pass has a cost.</p>
     </header>
 
     <main>
         
         <div class="synopsis-block">
-            <p>In a realm where looming theaters lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
-            <p>All she needs to do is let Inky lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between Eternalmoor and beyond.</p>
+            <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
+            <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond.</p>
         </div>
 
         <div class="placeholder-container">
