@@ -2,7 +2,7 @@
 
 | File | Used for |
 |------|----------|
-| `Room000.png` | Full-width environment behind the **You are in the room** dialogue panel |
+| `Room000.png` | Full-width room screenshot above the **Join as Aril's confidant** dialogue panel |
 | `Echo000.png` | Portrait of an Echo beside **Memories that weigh on you** |
 | `Driver000.png` | Rectangular **driver** image beside the four forces list (slightly tilted) |
 

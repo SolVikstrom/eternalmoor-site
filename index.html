@@ -218,15 +218,9 @@
         }
 
         .mechanics-hero {
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            width: 100%;
-        }
-
-        .mechanics-hero-visual {
             position: relative;
             width: 100%;
+            min-height: 300px;
             aspect-ratio: 16 / 9;
             border-radius: 6px;
             overflow: hidden;
@@ -235,7 +229,8 @@
         }
 
         .mechanics-hero-bg {
-            display: block;
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -246,7 +241,7 @@
             display: none;
         }
 
-        .mechanics-hero.is-missing-bg .mechanics-hero-visual::after {
+        .mechanics-hero.is-missing-bg::after {
             content: 'Add img/mechanics/Room000.png';
             position: absolute;
             inset: 0;
@@ -258,10 +253,26 @@
             z-index: 0;
         }
 
+        .mechanics-hero-scrim {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(17, 18, 16, 0.94) 0%,
+                rgba(17, 18, 16, 0.4) 50%,
+                rgba(17, 18, 16, 0.12) 100%
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
         .dialogue-panel {
-            position: relative;
-            width: min(100%, 720px);
-            margin: 1.1rem auto 0;
+            position: absolute;
+            left: 50%;
+            bottom: 1.35rem;
+            transform: translateX(-50%);
+            width: min(94%, 720px);
+            z-index: 2;
             background: rgba(24, 25, 22, 0.94);
             border: 2px solid var(--color-highlight);
             border-radius: 6px;
@@ -658,13 +669,14 @@
             .character-name-tag {
                 font-size: 2.25rem;
             }
-            .mechanics-hero-visual {
+            .mechanics-hero {
                 aspect-ratio: 4 / 3;
+                min-height: 220px;
             }
             .dialogue-panel {
-                width: 100%;
+                width: 92%;
                 padding: 1.15rem 1.25rem 1.25rem;
-                margin-top: 0.85rem;
+                bottom: 0.85rem;
             }
             .dialogue-label {
                 font-size: 1.15rem;
@@ -716,26 +728,26 @@
 
         <div id="the-quest" class="tab-content active">
             <div class="prose-block">
-                <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with a sought-after invitation to peek inside the <span class="highlight">Backstages</span>, where all-knowing and unbothered creatures named <span class="highlight">Blackbirds</span> roam.</p>
+                <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
                 <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond.</p>
-                <p>But, as it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pin drop of clarity; Inky seems far more interested in exploring the journey than guiding Aril to Blackbird's doorstep.</p>
-                <p>You follow her on this quest — as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
+                <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
+                <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
+                <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
             </div>
         </div>
 
         <div id="mechanics" class="tab-content">
             <div class="mechanics-flow">
 
-                                <section class="mechanics-hero" id="mechanics-hero">
-                    <div class="mechanics-hero-visual">
-                        <img
-                            class="mechanics-hero-bg"
-                            src="img/mechanics/Room000.png"
-                            alt="Eternalmoor - Aril speaks to you through the screen"
-                            onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
-                    </div>
+                <section class="mechanics-hero" id="mechanics-hero">
+                    <img
+                        class="mechanics-hero-bg"
+                        src="img/mechanics/Room000.png"
+                        alt="Eternalmoor — Aril speaks to you through the screen"
+                        onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
+                    <div class="mechanics-hero-scrim" aria-hidden="true"></div>
                     <div class="dialogue-panel">
-                        <span class="dialogue-label">You are in the room</span>
+                        <span class="dialogue-label">Join as Aril's confidant</span>
                         <p><span class="highlight">Aril</span> speaks through the screen to you — for advice, argument, and quiet company. Help her move objects, weigh dilemmas, and shape the tone of the journey.</p>
                     </div>
                 </section>
@@ -834,7 +846,7 @@
                     </div>
                     <div class="character-copy">
                         <h3>The chaotic detour</h3>
-                        <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a Blackbird's inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
+                        <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a <span class="highlight">Blackbird</span>'s inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
                     </div>
                 </article>
 
