@@ -132,6 +132,40 @@
             max-width: 750px;
         }
 
+        .quest-highlights {
+            list-style: none;
+            margin: 2.25rem 0 0;
+            padding: 0;
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .quest-highlights li {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-left: 3px solid var(--color-highlight);
+            border-radius: 4px;
+            padding: 1rem 1.35rem 1.1rem;
+        }
+
+        .quest-highlights strong {
+            display: block;
+            font-family: var(--font-sticky);
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            color: var(--color-accent);
+            margin-bottom: 0.4rem;
+            font-weight: normal;
+        }
+
+        .quest-highlights span {
+            display: block;
+            color: var(--color-dim);
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
         .grid-placeholders {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -756,6 +790,24 @@
                 <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
                 <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
                 <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
+                <ul class="quest-highlights">
+                    <li>
+                        <strong>A Journey of Friendship</strong>
+                        <span>Navigate the bond between Aril and Inky as they face the unknown together.</span>
+                    </li>
+                    <li>
+                        <strong>Childhood dilemmas</strong>
+                        <span>Aid nine-year-old <span class="highlight">Kehan</span> as he grapples with the consequences of inviting a haunted tree into his backyard.</span>
+                    </li>
+                    <li>
+                        <strong>The Path to Self-Realization</strong>
+                        <span>Discover what it truly means to evolve beyond the game.</span>
+                    </li>
+                    <li>
+                        <strong>The Mysteries of Existence</strong>
+                        <span>Uncover the meaning of life hidden within the theaters of Eternalmoor.</span>
+                    </li>
+                </ul>
             </div>
         </div>
 
