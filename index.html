@@ -253,9 +253,15 @@
         }
 
         .mechanics-hero {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+        }
+
+        .mechanics-hero-visual {
             position: relative;
             width: 100%;
-            min-height: 300px;
             aspect-ratio: 16 / 9;
             border-radius: 6px;
             overflow: hidden;
@@ -264,8 +270,7 @@
         }
 
         .mechanics-hero-bg {
-            position: absolute;
-            inset: 0;
+            display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -276,7 +281,7 @@
             display: none;
         }
 
-        .mechanics-hero.is-missing-bg::after {
+        .mechanics-hero.is-missing-bg .mechanics-hero-visual::after {
             content: 'Add img/mechanics/Room000.png';
             position: absolute;
             inset: 0;
@@ -288,26 +293,10 @@
             z-index: 0;
         }
 
-        .mechanics-hero-scrim {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                to top,
-                rgba(17, 18, 16, 0.94) 0%,
-                rgba(17, 18, 16, 0.4) 50%,
-                rgba(17, 18, 16, 0.12) 100%
-            );
-            pointer-events: none;
-            z-index: 1;
-        }
-
         .dialogue-panel {
-            position: absolute;
-            left: 50%;
-            bottom: 1.35rem;
-            transform: translateX(-50%);
-            width: min(94%, 720px);
-            z-index: 2;
+            position: relative;
+            width: min(100%, 720px);
+            margin: 1.1rem auto 0;
             background: rgba(24, 25, 22, 0.94);
             border: 2px solid var(--color-highlight);
             border-radius: 6px;
@@ -704,14 +693,13 @@
             .character-name-tag {
                 font-size: 2.25rem;
             }
-            .mechanics-hero {
+            .mechanics-hero-visual {
                 aspect-ratio: 4 / 3;
-                min-height: 220px;
             }
             .dialogue-panel {
-                width: 92%;
+                width: 100%;
                 padding: 1.15rem 1.25rem 1.25rem;
-                bottom: 0.85rem;
+                margin-top: 0.85rem;
             }
             .dialogue-label {
                 font-size: 1.15rem;
@@ -775,12 +763,13 @@
             <div class="mechanics-flow">
 
                 <section class="mechanics-hero" id="mechanics-hero">
-                    <img
-                        class="mechanics-hero-bg"
-                        src="img/mechanics/Room000.png"
-                        alt="Eternalmoor — Aril speaks to you through the screen"
-                        onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
-                    <div class="mechanics-hero-scrim" aria-hidden="true"></div>
+                    <div class="mechanics-hero-visual">
+                        <img
+                            class="mechanics-hero-bg"
+                            src="img/mechanics/Room000.png"
+                            alt="Eternalmoor - Aril speaks to you through the screen"
+                            onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
+                    </div>
                     <div class="dialogue-panel">
                         <span class="dialogue-label">Join as Aril's confidant</span>
                         <p><span class="highlight">Aril</span> speaks through the screen to you — for advice, argument, and quiet company. Help her move objects, weigh dilemmas, and shape the tone of the journey.</p>
