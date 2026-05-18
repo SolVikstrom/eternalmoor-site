@@ -132,40 +132,6 @@
             max-width: 750px;
         }
 
-        .quest-highlights {
-            list-style: none;
-            margin: 2.25rem 0 0;
-            padding: 0;
-            max-width: 750px;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .quest-highlights li {
-            background: var(--color-card);
-            border: 1px solid var(--color-border);
-            border-left: 3px solid var(--color-highlight);
-            border-radius: 4px;
-            padding: 1rem 1.35rem 1.1rem;
-        }
-
-        .quest-highlights strong {
-            display: block;
-            font-family: var(--font-sticky);
-            font-size: 1.05rem;
-            letter-spacing: 0.5px;
-            color: var(--color-accent);
-            margin-bottom: 0.4rem;
-            font-weight: normal;
-        }
-
-        .quest-highlight-desc {
-            color: var(--color-dim);
-            font-size: 0.95rem;
-            line-height: 1.55;
-            margin: 0;
-        }
         .grid-placeholders {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -201,41 +167,6 @@
             grid-column: 1 / -1;
         }
 
-        /* THE DEV */
-        .dev-flow {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-top: 0.5rem;
-        }
-
-        .dev-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5rem 0 0.25rem;
-        }
-
-        .dev-blender-badge {
-            display: block;
-            width: min(100%, 360px);
-            height: auto;
-            object-fit: contain;
-            filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.45));
-        }
-
-        .dev-visual.is-missing .dev-blender-badge {
-            display: none;
-        }
-
-        .dev-visual.is-missing::after {
-            content: 'Add img/dev/made-in-blender.png';
-            font-size: 0.8rem;
-            color: var(--color-dim);
-            border: 2px dashed var(--color-border);
-            border-radius: 6px;
-            padding: 2rem 2.5rem;
-        }
         .driver-list {
             list-style: none;
             margin: 0 0 1rem 0;
@@ -278,60 +209,6 @@
         }
 
 
-
-        .dev-imagineers {
-            margin-top: 0.25rem;
-        }
-
-        .dev-imagineers-heading {
-            font-family: var(--font-sticky);
-            font-size: 1.35rem;
-            color: var(--color-accent);
-            letter-spacing: 1px;
-            margin-bottom: 1.25rem;
-        }
-
-        .dev-imagineers-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
-        }
-
-        .dev-imagineers-card {
-            background: var(--color-card);
-            border: 1px solid var(--color-border);
-            border-radius: 6px;
-            padding: 1.35rem 1.5rem;
-            text-align: left;
-        }
-
-        .dev-imagineers-card--iris {
-            border-left: 3px solid var(--color-highlight);
-        }
-
-        .dev-imagineers-name {
-            font-family: var(--font-sticky);
-            font-size: 1.1rem;
-            color: var(--color-highlight);
-            letter-spacing: 0.5px;
-            margin-bottom: 0.35rem;
-        }
-
-        .dev-imagineers-role {
-            display: block;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: var(--color-accent);
-            margin-bottom: 0.65rem;
-        }
-
-        .dev-imagineers-card p:last-child {
-            color: var(--color-dim);
-            font-size: 0.9rem;
-            line-height: 1.55;
-            margin: 0;
-        }
         /* MECHANICS — cinematic layout */
         .mechanics-flow {
             display: flex;
@@ -341,15 +218,9 @@
         }
 
         .mechanics-hero {
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            width: 100%;
-        }
-
-        .mechanics-hero-visual {
             position: relative;
             width: 100%;
+            min-height: 300px;
             aspect-ratio: 16 / 9;
             border-radius: 6px;
             overflow: hidden;
@@ -358,7 +229,8 @@
         }
 
         .mechanics-hero-bg {
-            display: block;
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -369,7 +241,7 @@
             display: none;
         }
 
-        .mechanics-hero.is-missing-bg .mechanics-hero-visual::after {
+        .mechanics-hero.is-missing-bg::after {
             content: 'Add img/mechanics/Room000.png';
             position: absolute;
             inset: 0;
@@ -381,10 +253,26 @@
             z-index: 0;
         }
 
+        .mechanics-hero-scrim {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(17, 18, 16, 0.94) 0%,
+                rgba(17, 18, 16, 0.4) 50%,
+                rgba(17, 18, 16, 0.12) 100%
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
         .dialogue-panel {
-            position: relative;
-            width: min(100%, 720px);
-            margin: 1.1rem auto 0;
+            position: absolute;
+            left: 50%;
+            bottom: 1.35rem;
+            transform: translateX(-50%);
+            width: min(94%, 720px);
+            z-index: 2;
             background: rgba(24, 25, 22, 0.94);
             border: 2px solid var(--color-highlight);
             border-radius: 6px;
@@ -781,13 +669,14 @@
             .character-name-tag {
                 font-size: 2.25rem;
             }
-            .mechanics-hero-visual {
+            .mechanics-hero {
                 aspect-ratio: 4 / 3;
+                min-height: 220px;
             }
             .dialogue-panel {
-                width: 100%;
+                width: 92%;
                 padding: 1.15rem 1.25rem 1.25rem;
-                margin-top: 0.85rem;
+                bottom: 0.85rem;
             }
             .dialogue-label {
                 font-size: 1.15rem;
@@ -814,9 +703,6 @@
                 max-width: 200px;
                 transform: rotate(4deg);
             }
-            .dev-imagineers-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -842,22 +728,11 @@
 
         <div id="the-quest" class="tab-content active">
             <div class="prose-block">
-                                <p>In a realm where looming <span class="highlight">Theaters</span> lure explorers inside, trapping them in the play of yet another lifetime, Aril stands with a sought-after invitation to peek inside the <span class="highlight">Backstages</span>, where all-knowing and unbothered creatures named <span class="highlight">Blackbirds</span> roam.</p>
-                <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond. But, Inky seems far more interested in exploring the journey than guiding Aril to Blackbird's doorstep …</p>
-                <p>You follow them on this quest — as a helping hand, companion, and a conversational partner. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
-                <ul class="quest-highlights">
-                    <li>
-                        <strong>A Journey of Friendship</strong>
-                        <p class="quest-highlight-desc">Navigate the bond between Aril and Inky as they venture deep into yet another theater, in pursuit of the ancient tree.</p></li>
-                    <li>
-                        <strong>Childhood dilemmas</strong>
-                        <p class="quest-highlight-desc">Help nine-year-old <span class="highlight">Kehan</span> grapple with the consequences of inviting a haunted tree into his and <span class="highlight">Heather</span>'s tenderly curated woodland.</p>
-                    </li>
-                    <li>
-                        <strong>The Path to Self-Realization</strong>
-                        <p class="quest-highlight-desc">Discover what it truly means to transcend the stage and enter the realms of backstage.</p></li>
-
-                </ul>
+                <p>In a realm where looming <span class="highlight">Theaters</span> lure travelers inside, trapping them in the play of yet another lifetime, Aril stands with this sought-after invitation.</p>
+                <p>All she needs to do is let <span class="highlight">Inky</span> lead the way to an ancient tree tucked away in the very corner of a theater, said to mark the gate between <span class="highlight">Eternalmoor</span> and beyond.</p>
+                <p>But to reach that tree, she must first navigate another clusterfuck of a lifetime.</p>
+                <p>As it turns out, being guided by a heart-spirit is like babysitting chaos, hoping for a pindrop of clarity. Inky seems far more interested in exploring the journey than guiding Aril to the end.</p>
+                <p>You follow her on this quest—as a helping hand, a companion, and a conversational partner as the three of you explore the gritty allure of simply being. Together, you will gather experiences and traits, balancing the horrors of life against its wonders.</p>
             </div>
         </div>
 
@@ -865,13 +740,12 @@
             <div class="mechanics-flow">
 
                 <section class="mechanics-hero" id="mechanics-hero">
-                    <div class="mechanics-hero-visual">
-                        <img
-                            class="mechanics-hero-bg"
-                            src="img/mechanics/Room000.png"
-                            alt="Eternalmoor - Aril speaks to you through the screen"
-                            onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
-                    </div>
+                    <img
+                        class="mechanics-hero-bg"
+                        src="img/mechanics/Room000.png"
+                        alt="Eternalmoor — Aril speaks to you through the screen"
+                        onerror="document.getElementById('mechanics-hero').classList.add('is-missing-bg')">
+                    <div class="mechanics-hero-scrim" aria-hidden="true"></div>
                     <div class="dialogue-panel">
                         <span class="dialogue-label">Join as Aril's confidant</span>
                         <p><span class="highlight">Aril</span> speaks through the screen to you — for advice, argument, and quiet company. Help her move objects, weigh dilemmas, and shape the tone of the journey.</p>
@@ -952,7 +826,7 @@
                     </div>
                     <div class="character-copy">
                         <h3>The restless seeker</h3>
-                        <p>Driven by a deep longing to finally peek into the <span class="highlight">Backstages</span> of reality, Aril is determined to return <span class="highlight">Inky</span> to <span class="highlight">Blackbird</span>. She will jump, climb, swing, and reach for what matters, craving answers to the greater questions of the universe.</p>
+                        <p>Driven by a deep longing to finally peek into the <span class="highlight">Backstages</span> of reality, Aril is determined to return Inky to the <span class="highlight">Blackbird</span>. She will jump, climb, swing, and reach for what matters, craving answers to the greater questions of the universe.</p>
                         <p>Explore her <span class="highlight">Tangled Thought Space</span>, contemplate with her on <span class="highlight">meditation rocks</span>, solve riddles, and search for the true meaning of life.</p>
                     </div>
                 </article>
@@ -975,73 +849,24 @@
                         <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a <span class="highlight">Blackbird</span>'s inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
                     </div>
                 </article>
-                <article class="character-spotlight character-spotlight--kehan">
-                    <div class="character-visual">
-                        <div class="character-frame" data-file="Kehan000.png">
-                            <img
-                                src="img/characters/Kehan000.png"
-                                alt="Kehan, nine years old"
-                                class="character-img"
-                                width="520"
-                                height="693"
-                                onerror="this.closest('.character-frame').classList.add('is-missing')">
-                            <span class="character-name-tag" aria-hidden="true">Kehan</span>
-                        </div>
-                    </div>
-                    <div class="character-copy">
-                        <h3>Woodland heaven</h3>
-                        <p>Nine-year-old <span class="highlight">Kehan</span> burns to create the ultimate woodland heaven for dormice — the same shy creatures that lived in <span class="highlight">Memorial Grove</span> when <span class="highlight">Heather</span> was little, but haven't been seen since.</p>
-                        <p>When a dormouse crosses his path, and Heather is in the village delivering <span class="highlight">Looking Jars</span>, a feverish rush begins: he must give her the ultimate surprise before she comes home.</p>
-                    </div>
-                </article>
-
 
             </div>
         </div>
 
-                <div id="the-dev" class="tab-content">
-            <div class="dev-flow">
-                <div class="dev-visual">
-                    <img
-                        class="dev-blender-badge"
-                        src="img/dev/made-in-blender.png"
-                        alt="Made in Blender"
-                        onerror="this.closest('.dev-visual').classList.add('is-missing')">
+        <div id="the-dev" class="tab-content">
+            <div class="grid-placeholders">
+                <div class="placeholder-box">
+                    <h3>Craft with intent</h3>
+                    <p>A solo-led, quality-first production — Unity for play and pacing, Blender for world-building, and systems built for dialogue, exploration, and emotional mechanics rather than combat loops. Chapter 1 is in active development; the goal is a cohesive, authored experience.</p>
                 </div>
-                <div class="grid-placeholders">
-                    <div class="placeholder-box">
-                        <h3>Craft with intent</h3>
-                        <p>A small-team, quality-first production — Unity for play and pacing, Blender for world-building, and systems built for dialogue, exploration, and emotional mechanics rather than combat loops. Chapter 1 is in active development; the goal is a cohesive, authored experience.</p>
-                    </div>
-                    <div class="placeholder-box">
-                        <h3>Original voice, original score</h3>
-                        <p>Every note is written and produced for Eternalmoor, with live musicians where the arrangement asks for it. Audio is part of the storytelling, not wallpaper.</p>
-                    </div>
+                <div class="placeholder-box">
+                    <h3>Original voice, original score</h3>
+                    <p>Every note is written and produced for Eternalmoor, with live musicians where the arrangement asks for it. Audio is part of the storytelling, not wallpaper.</p>
                 </div>
-                <section class="dev-imagineers" aria-labelledby="dev-imagineers-heading">
-                    <h3 class="dev-imagineers-heading" id="dev-imagineers-heading">The Imagineers</h3>
-                    <div class="dev-imagineers-grid">
-                        <article class="dev-imagineers-card">
-                            <p class="dev-imagineers-name">Sol Vikström</p>
-                            <span class="dev-imagineers-role">Creative lead · storyteller · dev</span>
-                            <p>Design, writing, and direction — the world, the tone, and the stubborn belief that a game can make room for reflection.</p>
-                        </article>
-                        <article class="dev-imagineers-card">
-                            <p class="dev-imagineers-name">Stefan Hallgren</p>
-                            <span class="dev-imagineers-role">Co-producer · financing · sound</span>
-                            <p>Represents Eternalmoor to financiers and helps secure backing for the production — with a contributing hand in sound design and mix.</p>
-                        </article>
-                        <article class="dev-imagineers-card dev-imagineers-card--iris">
-                            <p class="dev-imagineers-name">Iris</p>
-                            <span class="dev-imagineers-role">Helpful cat</span>
-                            <p>Morale, keyboard supervision, and the occasional decisive stare when a feature needs more love.</p>
-                        </article>
-                    </div>
-                </section>
             </div>
         </div>
 
-<footer>
+        <footer>
             <div class="social-links">
                 <a href="https://www.instagram.com/musings-from-eternalmoor" target="_blank" rel="noopener noreferrer" aria-label="Follow Eternalmoor on Instagram">
                     <svg class="social-icon" viewBox="0 0 24 24">
@@ -1054,7 +879,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="copyright">&copy; 2026 Eternalmoor. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 Musings from Eternalmoor. All rights reserved.</p>
         </footer>
 
     </div>
