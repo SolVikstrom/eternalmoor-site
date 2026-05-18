@@ -167,6 +167,41 @@
             grid-column: 1 / -1;
         }
 
+        /* THE DEV */
+        .dev-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .dev-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0 0.25rem;
+        }
+
+        .dev-blender-badge {
+            display: block;
+            width: min(100%, 360px);
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.45));
+        }
+
+        .dev-visual.is-missing .dev-blender-badge {
+            display: none;
+        }
+
+        .dev-visual.is-missing::after {
+            content: 'Add img/dev/made-in-blender.png';
+            font-size: 0.8rem;
+            color: var(--color-dim);
+            border: 2px dashed var(--color-border);
+            border-radius: 6px;
+            padding: 2rem 2.5rem;
+        }
         .driver-list {
             list-style: none;
             margin: 0 0 1rem 0;
@@ -854,7 +889,15 @@
         </div>
 
         <div id="the-dev" class="tab-content">
-            <div class="grid-placeholders">
+            <div class="dev-flow">
+                <div class="dev-visual">
+                    <img
+                        class="dev-blender-badge"
+                        src="img/dev/made-in-blender.png"
+                        alt="Made in Blender"
+                        onerror="this.closest('.dev-visual').classList.add('is-missing')">
+                </div>
+                <div class="grid-placeholders">
                 <div class="placeholder-box">
                     <h3>Craft with intent</h3>
                     <p>A solo-led, quality-first production — Unity for play and pacing, Blender for world-building, and systems built for dialogue, exploration, and emotional mechanics rather than combat loops. Chapter 1 is in active development; the goal is a cohesive, authored experience.</p>
@@ -863,6 +906,7 @@
                     <h3>Original voice, original score</h3>
                     <p>Every note is written and produced for Eternalmoor, with live musicians where the arrangement asks for it. Audio is part of the storytelling, not wallpaper.</p>
                 </div>
+            </div>
             </div>
         </div>
 
