@@ -160,11 +160,11 @@
             font-weight: normal;
         }
 
-        .quest-highlights span {
-            display: block;
+        .quest-highlight-desc {
             color: var(--color-dim);
             font-size: 0.95rem;
             line-height: 1.55;
+            margin: 0;
         }
         .grid-placeholders {
             display: grid;
@@ -793,20 +793,17 @@
                 <ul class="quest-highlights">
                     <li>
                         <strong>A Journey of Friendship</strong>
-                        <span>Navigate the bond between Aril and Inky as they face the unknown together.</span>
-                    </li>
+                        <p class="quest-highlight-desc">Navigate the bond between Aril and Inky as they face the unknown together.</p></li>
                     <li>
                         <strong>Childhood dilemmas</strong>
-                        <span>Aid nine-year-old <span class="highlight">Kehan</span> as he grapples with the consequences of inviting a haunted tree into his backyard.</span>
+                        <p class="quest-highlight-desc">Aid nine-year-old <span class="highlight">Kehan</span> as he grapples with the consequences of inviting a haunted tree into his backyard.</p>
                     </li>
                     <li>
                         <strong>The Path to Self-Realization</strong>
-                        <span>Discover what it truly means to evolve beyond the game.</span>
-                    </li>
+                        <p class="quest-highlight-desc">Discover what it truly means to evolve beyond the game.</p></li>
                     <li>
                         <strong>The Mysteries of Existence</strong>
-                        <span>Uncover the meaning of life hidden within the theaters of Eternalmoor.</span>
-                    </li>
+                        <p class="quest-highlight-desc">Uncover the meaning of life hidden within the theaters of Eternalmoor.</p></li>
                 </ul>
             </div>
         </div>
@@ -925,6 +922,25 @@
                         <p>Driven by a desire to taste the fullness of existence, Inky is far more interested in the detour than the destination. They are the chaotic spirit of a <span class="highlight">Blackbird</span>'s inkwell heart—and when their priorities clash with Aril's, you must help decide what happens next.</p>
                     </div>
                 </article>
+                <article class="character-spotlight character-spotlight--kehan">
+                    <div class="character-visual">
+                        <div class="character-frame" data-file="Kehan000.png">
+                            <img
+                                src="img/characters/Kehan000.png"
+                                alt="Kehan, nine years old"
+                                class="character-img"
+                                width="520"
+                                height="693"
+                                onerror="this.closest('.character-frame').classList.add('is-missing')">
+                            <span class="character-name-tag" aria-hidden="true">Kehan</span>
+                        </div>
+                    </div>
+                    <div class="character-copy">
+                        <h3>The boy and the tree</h3>
+                        <p>Nine-year-old <span class="highlight">Kehan</span> is caught in a childhood dilemma: what happens when you invite a haunted tree into your backyard? Help him grapple with the consequences — and what it means to want something strange and wonderful at once.</p>
+                    </div>
+                </article>
+
 
             </div>
         </div>

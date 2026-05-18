@@ -5,7 +5,8 @@ Drop portrait images here for the **Characters** tab on the campaign site.
 | File | Character |
 |------|-----------|
 | `Aril000.png` | Aril (portrait slot) |
-| `Inky000.png` | Inky (portrait slot — add when ready) |
+| `Inky000.png` | Inky (portrait slot) |
+| `Kehan000.png` | Kehan (portrait slot — add when ready) |
 
 Use numbered exports (`000`, `001`, …) as you render more poses. Full-body shots can get their own section later.
 
