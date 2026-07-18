@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eternalmoor</title>
+    <title>The essence of /ju:/ — Eternalmoor</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sticky&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
     <style>
+        @font-face {
+            font-family: 'Barlow Condensed';
+            src: url('fonts/BarlowCondensed-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
-            --font-sticky: 'Sticky', sans-serif;
-            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-heading: 'Barlow Condensed', sans-serif;
+            --font-sans: 'Barlow Condensed', sans-serif;
             --color-bg: #111210;
             --color-card: #181916;
             --color-border: #2a2c27;
@@ -49,18 +53,20 @@
         }
 
         .title {
-            font-family: var(--font-sticky);
-            font-size: 3.5rem;
-            letter-spacing: 3px;
-            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            font-size: clamp(2.25rem, 6vw, 3.25rem);
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+            line-height: 1.15;
             text-transform: uppercase;
         }
 
         .tagline {
-            font-size: 1.25rem;
+            font-size: 1.05rem;
             color: var(--color-accent);
             font-weight: 300;
             line-height: 1.4;
+            letter-spacing: 0.02em;
         }
 
         .hero-image-container {
@@ -94,12 +100,13 @@
             background: none;
             border: none;
             color: var(--color-dim);
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.1rem;
             padding: 0.75rem 1.25rem;
             cursor: pointer;
             transition: all 0.2s;
             letter-spacing: 1px;
+            text-transform: uppercase;
             border-bottom: 2px solid transparent;
         }
 
@@ -152,12 +159,13 @@
 
         .quest-highlights strong {
             display: block;
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.05rem;
             letter-spacing: 0.5px;
             color: var(--color-accent);
             margin-bottom: 0.4rem;
             font-weight: normal;
+            text-transform: uppercase;
         }
 
         .quest-highlight-desc {
@@ -182,9 +190,10 @@
         }
 
         .placeholder-box h3 {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             color: var(--color-accent);
             margin-bottom: 0.75rem;
+            text-transform: uppercase;
         }
 
         .placeholder-box p {
@@ -254,11 +263,12 @@
 
         .driver-name {
             display: block;
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1rem;
             letter-spacing: 0.5px;
             color: var(--color-highlight);
             margin-bottom: 0.35rem;
+            text-transform: uppercase;
         }
 
         .driver-pair {
@@ -284,11 +294,12 @@
         }
 
         .dev-imagineers-heading {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.35rem;
             color: var(--color-accent);
             letter-spacing: 1px;
             margin-bottom: 1.25rem;
+            text-transform: uppercase;
         }
 
         .dev-imagineers-grid {
@@ -310,11 +321,12 @@
         }
 
         .dev-imagineers-name {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.1rem;
             color: var(--color-highlight);
             letter-spacing: 0.5px;
             margin-bottom: 0.35rem;
+            text-transform: uppercase;
         }
 
         .dev-imagineers-role {
@@ -407,11 +419,12 @@
 
         .dialogue-label {
             display: block;
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.4rem;
             letter-spacing: 1px;
             color: var(--color-highlight);
             margin-bottom: 0.65rem;
+            text-transform: uppercase;
         }
 
         .dialogue-panel p {
@@ -474,10 +487,11 @@
         }
 
         .mechanics-echo-copy h3 {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             color: var(--color-accent);
             margin-bottom: 0.75rem;
             letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .mechanics-echo-copy p {
@@ -496,10 +510,11 @@
         }
 
         .mechanics-drivers h3 {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             color: var(--color-accent);
             margin-bottom: 0.75rem;
             letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .mechanics-drivers > p {
@@ -515,10 +530,11 @@
         }
 
         .mechanics-drivers-content h3 {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             color: var(--color-accent);
             margin-bottom: 0.75rem;
             letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .mechanics-drivers-content > p {
@@ -684,13 +700,14 @@
             position: absolute;
             bottom: -0.35rem;
             left: -0.5rem;
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 2.75rem;
             letter-spacing: 2px;
             color: var(--color-highlight);
             text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
             line-height: 1;
             pointer-events: none;
+            text-transform: uppercase;
         }
 
         .character-spotlight--inky .character-name-tag {
@@ -706,11 +723,12 @@
         }
 
         .character-copy h3 {
-            font-family: var(--font-sticky);
+            font-family: var(--font-heading);
             font-size: 1.35rem;
             color: var(--color-accent);
             letter-spacing: 1px;
             margin-bottom: 1rem;
+            text-transform: uppercase;
         }
 
         .character-copy p {
@@ -823,8 +841,8 @@
 <body>
 
     <header>
-        <h1 class="title">Eternalmoor</h1>
-        <p class="tagline">A <span class="highlight">Blackbird</span> puts his heart in <span class="highlight">Aril</span>'s care, asking her to return it into the backstages of reality; an invitation. <br>But every backstage pass has a cost.</p>
+        <h1 class="title">The essence of /ju:/</h1>
+        <p class="tagline">a Musings from Eternalmoor production</p>
     </header>
 
     <div class="hero-image-container">
