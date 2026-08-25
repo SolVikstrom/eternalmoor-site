@@ -53,7 +53,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 - Keepers past: not on public site until later.
 
 ### Quest bumps (public)
-- **Help young Kehan figure out what unlocks the lock — and get the guests through.**  
+- **A lock with a will of its own**  
   Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. A Key Station stands by the lock — revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together.
 - **Survive the ricochet of your own haunting.**  
   Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
