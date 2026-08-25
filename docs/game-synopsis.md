@@ -1,10 +1,54 @@
-# Game synopsis — Musings from Eternalmoor / The essence of /ju:/
+# Game synopsis — Musings from Eternalmoor / The essence of Yew
 
-Reference document for campaign copy and story tone. Last updated from author notes (2026-07-20).
+Reference document for campaign copy and story tone. Last updated from author notes (2026-08-25).
 
-**Spoiler note for site copy:** Do not reveal that the tree sets berries that cause chaos (or the horse poisoning / Valley of Despair consequences) on the public campaign page.
+**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Public mission may say "Produce a Seed of Truth" / "Figure out what makes it appear" without explaining how.
 
 ---
+
+## Current Lock Keep chapter (active)
+
+### Setup
+- Ju and Inky accept Blackbird’s final trial / bargain: exist as a haunted Tree of Life and Death and bring him its Seed of Truth.
+- They arrive tethered to a broken branch from the tree.
+- The branch lands on Kehan’s narrowboat; Kehan tows them upstream.
+
+### Arrival — no keeper on site
+- They reach **The Lock**: closed; **cottage empty**. No lock keeper present.
+- Kehan runs around figuring how to get past.
+- The branch is thirsty and puts down roots, anchoring the tree to the ground.
+
+### Becoming the Lock Keeper (through Kehan)
+- A second boat arrives → a queue. Kehan finds himself helping the guest onward.
+- This begins his **unconscious journey** into becoming Keeper of the Lock.
+- With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Looking Jars / passage).
+- Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living Nevlari on site.
+
+### End beat (thematic mirror for Ju)
+- Kehan asks where *he* is headed — and realizes he has already arrived: he wants a life **in service of others**, perfecting the trait of lock keeper.
+- Hint to Ju: sometimes you already have what you’re seeking (her iterations through lives vs becoming Blackbird who watches the Theatre).
+
+### Environment / lore (not all on the public site)
+- Cottage: museum of past keepers’ vision Looking Jars.
+- Outside: ruins / rings of earlier Lock Keep variants.
+- Nevlari = keepers past / empty-cottage memory — not an active keeper at arrival.
+
+### Mission (public)
+1. Produce a Seed of Truth.
+2. Help young Kehan get the lock up and running.
+3. Survive the ricochet of your own haunting.
+4. Try not to become the Lock Keep’s undoing in the process of growth.
+
+### Seed of Truth (design spoiler)
+- Forcing the berry from the tree → odd deformations; no true Seed.
+- Living as the tree / letting it pursue what it longs for → the Seed appears of its own accord.
+- Ju’s essence: she thinks she wants to FIND all answers; she actually burns to SEEK — the hunt itself.
+
+---
+
+## Older outline (partly superseded)
+
+The sections below retain earlier Nevlari-on-site / memorial Looking Jar beats. Prefer **Current Lock Keep chapter** when they conflict.
 
 ## Eternalmoor och val av minnen
 
@@ -18,7 +62,7 @@ Under en storm på scenen ser Hero en dörrmus söka skydd i ett träd. När bli
 
 Smällen väcker barnet Kehan som upptäcker elden och springer för att väcka sin vårdare H, vilken har dött av ålder i sömnen.
 
-## Färden och begravningen
+## Färden och begravningen (äldre — Nevlari på plats)
 
 Den rådiga Kehan kopplar loss hästen, drar pråmen uppströms med grenen och musen ombord till slussvaktens stuga där Nevlari tar emot.
 
