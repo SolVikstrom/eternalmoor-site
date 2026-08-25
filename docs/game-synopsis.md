@@ -46,11 +46,11 @@ Reference document for campaign copy and story tone. Last updated from author no
 - Cottage: Looking Jars museum of keepers past (unnamed on public site — no Nevlari character).
 - Outside: ruins / rings of earlier Lock Keep variants.
 
-### Mission (public)
-1. Produce a Seed of Truth.
-2. Try not to become the Lock Keep’s undoing in the process of growth.
-- Bargain pitch stays short (no undoing clause in the bargain sentence for now).
-- Keepers past: not on public site until later.
+### Mission / stakes (public)
+- No separate mission list (it repeated the bargain / Seed of Truth).
+- Stakes line (from earlier site copy): Your haunting dictates whether the Lock Keep spirals into cosy whimsy or dark, gritty tragedy.
+- Shorter historical variants: "Your haunting steers the Lock Keep toward whimsy or tragedy." / "…steers the cottage toward whimsy or tragedy."
+- Bargain pitch stays short. Keepers past / undoing mission lines: off public page for now.
 
 ### Quest bumps (public)
 - **A lock with a will of its own**  
