@@ -2,7 +2,7 @@
 
 Reference document for campaign copy and story tone. Last updated from author notes (2026-08-25).
 
-**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Public mission may say "Produce a Seed of Truth" / "Figure out what makes it appear" without explaining how.
+**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Do not spell that the Looking Board unlocks only when guests tell the truth, or that Kehan makes his own Looking Jar when he understands his calling (keeper spoiler). Public copy may hint board, keys, and cottage jars without explaining how.
 
 ---
 
