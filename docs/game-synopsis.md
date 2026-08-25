@@ -48,7 +48,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Mission / stakes (public)
 - No separate mission list (it repeated the bargain / Seed of Truth).
-- Stakes line: Your haunting dictates whether the Lock Keep spirals into a cosy haven — or an eerie harbour holding narrowboats that never made it through.
+- Stakes line: Your haunting dictates whether the Lock Keep spirals into a cosy whimsical haven — or an eerie graveyard of narrowboats that never made it through.
 - Older variants: "…or dark, gritty tragedy." / "Your haunting steers the Lock Keep toward whimsy or tragedy."
 - Bargain pitch stays short. Keepers past / undoing mission lines: off public page for now.
 
