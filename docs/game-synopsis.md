@@ -35,7 +35,8 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Mission (public)
 1. Produce a Seed of Truth.
-2. Help young Kehan get the lock up and running.
+2. Help young Kehan figure out what unlocks the lock — and get the guests through.
+   - Life by the Lock (public): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. Help him figure out what unlocks it, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together.
 3. Survive the ricochet of your own haunting.
 4. Try not to become the Lock Keep’s undoing in the process of growth.
 
