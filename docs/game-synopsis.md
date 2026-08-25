@@ -2,7 +2,7 @@
 
 Reference document for campaign copy and story tone. Last updated from author notes (2026-08-25).
 
-**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Do not spell that the Looking Board unlocks only when guests tell the truth, or that Kehan makes his own Looking Jar when he understands his calling (keeper spoiler). Public copy may hint board, keys, and cottage jars without explaining how.
+**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Do not spell that the Key Station unlocks only when guests tell the truth, or that Kehan makes his own Looking Jar when he understands his calling (keeper spoiler). Public copy may hint the station, keys, and cottage jars without explaining how.
 
 ---
 
@@ -21,14 +21,14 @@ Reference document for campaign copy and story tone. Last updated from author no
 ### Becoming the Lock Keeper (through Kehan)
 - A second boat arrives → a queue. Kehan finds himself helping the guest onward.
 - This begins his **unconscious journey** into becoming Keeper of the Lock.
-- With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Looking Board / passage).
+- With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Key Station / passage).
 - Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living Nevlari on site.
 
-### Looking Board (passage — at the lock)
-- Reuse the art-deco theatre sidewalk standee (formerly Fermata keys station) beside the lock.
+### Key Station (passage — at the lock)
+- Reuse the art-deco theatre sidewalk standee (formerly Fermata keys station) beside the lock — now the **Key Station**.
 - Guest speaks where they are bound → the screen paints the motif / vision.
 - **Unlock only when they tell the truth** → a key releases → past the lock. Soft fail = nothing happens (no red/green arcade lights).
-- Public site: hint the board and keys; do **not** spell the truth rule.
+- Public site: hint the station and keys; do **not** spell the truth rule.
 
 ### Looking Jars (cottage mystery — not the gate)
 - Glass jars inside the empty cottage: a **museum of past lock keepers’ visions for the place** (dioramas / miniatures under glass — museum-case or lantern housing, not crystal-ball silhouette).
@@ -40,7 +40,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 - He creates his Looking Jar as the quiet seal of that calling (synopsis / game only).
 
 ### Environment / lore (not all on the public site)
-- Lock-side: Looking Board (active passage instrument).
+- Lock-side: Key Station (active passage instrument).
 - Cottage: Looking Jars museum of keepers past.
 - Outside: ruins / rings of earlier Lock Keep variants.
 - Nevlari = keepers past / empty-cottage memory — not an active keeper at arrival.
@@ -49,7 +49,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 1. Produce a Seed of Truth.
 2. Help young Kehan figure out what unlocks the lock — and get the guests through.
    - Life by the Lock (public): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. Help him figure out what unlocks it, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together.
-   - Looking Board (public, riddle): An art-deco looking board stands by the lock. Guests speak their destination; the screen answers in image — and sometimes a key falls for the gates. Counsel carefully: bad advice ricochets.
+   - Key Station (public, riddle): An art-deco Key Station stands by the lock. Guests speak their destination; the screen answers in image — and sometimes a key falls for the gates. Counsel carefully: bad advice ricochets.
    - Looking Jars (public, mystery): Inside the cottage, glass jars hold earlier keepers’ visions of this place — a quiet museum. What they meant, and what they still ask, is for the curious to discover.
 3. Survive the ricochet of your own haunting.
 4. Try not to become the Lock Keep’s undoing in the process of growth.
