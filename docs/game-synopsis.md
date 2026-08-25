@@ -22,7 +22,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 - A second boat arrives → a queue. Kehan finds himself helping the guest onward.
 - This begins his **unconscious journey** into becoming Keeper of the Lock.
 - With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Key Station / passage).
-- Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living Nevlari on site.
+- Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living keeper on site.
 
 ### Key Station (passage — at the lock)
 - Reuse the art-deco theatre sidewalk standee (formerly Fermata keys station) beside the lock — now the **Key Station**.
@@ -30,8 +30,10 @@ Reference document for campaign copy and story tone. Last updated from author no
 - **Unlock only when they tell the truth** → a key releases → past the lock. Soft fail = nothing happens (no red/green arcade lights).
 - Public site: folded into the single **Life by the Lock** bump; hint the station and keys; do **not** spell the truth rule.
 
-### Looking Jars (cottage mystery — not the gate)
+### Looking Jars / Keepers past (cottage mystery — not the gate)
 - Glass jars inside the empty cottage: a **museum of past lock keepers’ visions for the place** (dioramas / miniatures under glass — museum-case or lantern housing, not crystal-ball silhouette).
+- Outdoor ruins / rings of earlier Lock Keep variants.
+- **Public bump title:** Keepers past (not Looking Jars). No named Nevlari on the public site.
 - **Design spoiler / end beat:** when Kehan understands his calling, he makes **his own** Looking Jar. Do **not** put this on the public site (keeper spoiler).
 
 ### End beat (thematic mirror for Ju)
@@ -41,15 +43,14 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Environment / lore (not all on the public site)
 - Lock-side: Key Station (active passage instrument).
-- Cottage: Looking Jars museum of keepers past.
+- Cottage: Looking Jars museum of keepers past (unnamed on public site — no Nevlari character).
 - Outside: ruins / rings of earlier Lock Keep variants.
-- Nevlari = keepers past / empty-cottage memory — not an active keeper at arrival.
 
 ### Mission (public)
 1. Produce a Seed of Truth.
 2. Help young Kehan figure out what unlocks the lock — and get the guests through.
-   - Life by the Lock (public — single bump): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. A Key Station stands by the lock — revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together. Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
-   - Looking Jars stay off this bump; cottage museum lives in character/lore copy only.
+   - Life by the Lock (public): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. A Key Station stands by the lock — revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together. Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
+   - Keepers past (public): Inside the empty cottage, Looking Jars hold earlier keepers' visions of this place, and outdoor ruins mark earlier versions of the Lock Keep: a quiet museum of stewardship. Balance that quiet museum against the press of arriving guests — who begin to ask who will be the new lock keeper.
 3. Survive the ricochet of your own haunting.
 4. Try not to become the Lock Keep’s undoing in the process of growth.
 
