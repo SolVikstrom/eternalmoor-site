@@ -48,9 +48,8 @@ Reference document for campaign copy and story tone. Last updated from author no
 ### Mission (public)
 1. Produce a Seed of Truth.
 2. Help young Kehan figure out what unlocks the lock — and get the guests through.
-   - Life by the Lock (public): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. Help him figure out what unlocks it, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together.
-   - Key Station (public, riddle): An art-deco Key Station stands by the lock. Guests speak their destination; the screen answers in image — and sometimes a key falls for the gates. Counsel carefully: bad advice ricochets.
-   - Looking Jars (public, mystery): Inside the cottage, glass jars hold earlier keepers’ visions of this place — a quiet museum. What they meant, and what they still ask, is for the curious to discover.
+   - Life by the Lock (public — single bump): Young Kehan arrives at a mysterious abandoned lock that won't open — though every mechanism looks sound. A Key Station stands by the lock — revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates, get the waiting guests through, and keep the canal's daily work alive: salvage what falls, tend crushed fingers, hold the waterway together. Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
+   - Looking Jars stay off this bump; cottage museum lives in character/lore copy only.
 3. Survive the ricochet of your own haunting.
 4. Try not to become the Lock Keep’s undoing in the process of growth.
 
