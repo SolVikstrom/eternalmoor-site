@@ -54,9 +54,9 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Quest bumps (public)
 - **A lock with a will of its own**  
-  Young Kehan arrives at a mysterious abandoned lock that won't open, though every mechanism looks sound. A Key Station stands by the lock, revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates — and get the waiting guests through. The Lock Keep asks much of whoever tends it and whoever seeks passage — and plays both for fools when they fall short.
+  Young Kehan arrives at a mysterious abandoned lock that won't open, though every mechanism looks sound. A Key Station stands by the lock, revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates — and get the waiting guests through.
 - **Survive the ricochet of your own haunting.**  
-  Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
+  The Lock Keep asks much of whoever tends it and whoever seeks passage — and plays both for fools when they fall short. Mind your counsel: what you tend (or overlook) can ricochet — along this canal, every assumption has a habit of landing beautifully wrong.
 
 ### Seed of Truth (design spoiler)
 - Forcing the berry from the tree → odd deformations; no true Seed.
