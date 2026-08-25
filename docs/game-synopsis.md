@@ -28,7 +28,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 - Reuse the art-deco theatre sidewalk standee (formerly Fermata keys station) beside the lock — now the **Key Station**.
 - Guest speaks where they are bound → the screen paints the motif / vision.
 - **Unlock only when they tell the truth** → a key releases → past the lock. Soft fail = nothing happens (no red/green arcade lights).
-- Public site: hint the station and keys; do **not** spell the truth rule.
+- Public site: folded into the single **Life by the Lock** bump; hint the station and keys; do **not** spell the truth rule.
 
 ### Looking Jars (cottage mystery — not the gate)
 - Glass jars inside the empty cottage: a **museum of past lock keepers’ visions for the place** (dioramas / miniatures under glass — museum-case or lantern housing, not crystal-ball silhouette).
