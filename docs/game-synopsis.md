@@ -29,7 +29,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 ### Becoming the Lock Keeper (through Kehan)
 - A second boat arrives → a queue. Kehan finds himself helping the guest onward.
 - This begins his **unconscious journey** into becoming Keeper of the Lock.
-- With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Key Station / passage).
+- With a child’s intuition and the tree’s help, he works out how to get each guest through (ghost resistance / passage — not Key Station on the public pitch).
 - Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living keeper on site.
 
 ### Key Station (optional prop — not the public gate)
@@ -60,10 +60,14 @@ Reference document for campaign copy and story tone. Last updated from author no
 - Bargain pitch stays short. Keepers past / undoing mission lines: off public page for now.
 
 ### Quest bumps (public)
-- **A lock with a will of its own**  
-  Young Kehan arrives at a mysterious abandoned lock that won't open, though every mechanism looks sound. A Key Station stands by the lock, revealing images that shift with the person looking. Help him figure out what makes its keys fall for the gates — and get the waiting guests through.
+- **Mission — the lock**  
+  Figure out what opens the lock — and get waiting narrowboat guests through.  
+  Young Kehan arrives at a mysterious abandoned lock that won't open, though every mechanism looks sound. Something at the Keep resists every guest — and every helper. Expand the reach of your tree to keep him company from your branches, as he works out what makes the lock open.
+- **Mission — the Seed** *(see live site)*  
+  Figure out how to make your tree birth a Seed of Truth. Tethered to a fallen branch / splinter by the Lock Keepers Cottage; choices shape the Yew and its willingness to deliver the Seed.
 - **What you tend (or overlook) can ricochet**  
-  The Lock Keep asks much of whoever tends it and whoever seeks passage, and plays both for fools when they fall short. Mind every counsel you offer Kehan.
+  The Lock Keep asks much of whoever tends it and whoever seeks passage, and plays both for fools when they fall short. Mind every counsel you offer Kehan and guests looking for guidance.  
+  Your haunting dictates whether the Lock Keep spirals into a cosy whimsical haven — or an eerie graveyard of narrowboats that never made it through.
 
 ### Seed of Truth (design spoiler)
 - Forcing the berry from the tree → odd deformations; no true Seed.
