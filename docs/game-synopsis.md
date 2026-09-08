@@ -10,8 +10,16 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Setup
 - Ju and Inky accept Blackbird’s final trial / bargain: exist as a haunted Tree of Life and Death and bring him its Seed of Truth.
-- They arrive tethered to a broken branch from the tree.
+- **Not their first casting:** Blackbird lets them retry until nothing remains to tether to. After a hundred failures, a fire took their last tree; they return hoping a splinter remains. If not, the Backstage stays closed forever.
+- **Public pitch (live):** After a hundred failures they return once more, hoping the fire that took their last tree left a splinter to tether into. If not, the Backstage stays closed forever.
+- They arrive tethered to that splinter / broken branch from the tree.
 - The branch lands on Kehan’s narrowboat; Kehan tows them upstream.
+
+### Ghost lock keeper (lore / depth — not on public site)
+- First lock keeper was poisoned by a guest who violated hospitality (tea by his hearth; poison from his own garden yew) while intending to rob him — justified eternal distrust of guest intent.
+- He now watches the Lock as a ghost; the passage barrier / skepticism toward guests grows from that wound.
+- Ju and Inky learn his whims and must grow his trust that Kehan can take over the watch — so the Lock Keep can live again (un-haunted) and he and his tree find peace.
+- **Resolution branch (game):** tree ages; Kehan takes over; ghost finds peace. Keep off the campaign page.
 
 ### Arrival — no keeper on site
 - They reach **The Lock**: closed; **cottage empty**. No lock keeper present.
