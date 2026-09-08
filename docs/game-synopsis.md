@@ -2,7 +2,7 @@
 
 Reference document for campaign copy and story tone. Last updated from author notes (2026-08-25).
 
-**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Do not spell that the Key Station unlocks only when guests tell the truth, or that Kehan makes his own Looking Jar when he understands his calling (keeper spoiler). Public copy may hint the station, keys, and cottage jars without explaining how.
+**Spoiler note for site copy:** Do not reveal that forcing the berry causes weird deformations, or that the Seed blooms only when they truly live as the tree / let it have what it longs for. Do not spell the ghost lock keeper’s poison/hospitality backstory or that Kehan makes his own Looking Jar when he understands his calling (keeper spoiler). Public copy may hint that something at the Keep resists guests and helpers, without naming the ghost or Key Station as the gate.
 
 ---
 
@@ -32,11 +32,10 @@ Reference document for campaign copy and story tone. Last updated from author no
 - With a child’s intuition and the tree’s help, he works out **what each guest truly seeks** (Key Station / passage).
 - Journey = **becoming** the Lock Keeper via Kehan — not apprenticing under a living keeper on site.
 
-### Key Station (passage — at the lock)
-- Reuse the art-deco theatre sidewalk standee (formerly Fermata keys station) beside the lock — now the **Key Station**.
-- Guest speaks where they are bound → the screen paints the motif / vision.
-- **Unlock only when they tell the truth** → a key releases → past the lock. Soft fail = nothing happens (no red/green arcade lights).
-- Public site: folded into the single **Life by the Lock** bump; hint the station and keys; do **not** spell the truth rule.
+### Key Station (optional prop — not the public gate)
+- Art-deco theatre sidewalk standee may still exist in-world, but **public pitch no longer centers Key Station**.
+- Passage resistance is driven by the **ghost lock keeper** (whims, distrust, slapstick interference) — more varied than per-guest vision images.
+- Older design: guest speaks destination → screen paints motif → unlock only on truth → key falls. Soft fail = nothing. Kept here as optional/alternate, not storefront hook.
 
 ### Looking Jars / Keepers past (cottage mystery — not the gate; off public site for now)
 - Glass jars inside the empty cottage: a **museum of past lock keepers’ visions for the place** (dioramas / miniatures under glass — museum-case or lantern housing, not crystal-ball silhouette).
@@ -50,7 +49,7 @@ Reference document for campaign copy and story tone. Last updated from author no
 - He creates his Looking Jar as the quiet seal of that calling (synopsis / game only).
 
 ### Environment / lore (not all on the public site)
-- Lock-side: Key Station (active passage instrument).
+- Lock-side: ghost resistance to passage (public: “something at the Keep resists…”). Key Station optional/demoted.
 - Cottage: Looking Jars museum of keepers past (unnamed on public site — no Nevlari character).
 - Outside: ruins / rings of earlier Lock Keep variants.
 
