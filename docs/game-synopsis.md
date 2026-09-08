@@ -11,7 +11,8 @@ Reference document for campaign copy and story tone. Last updated from author no
 ### Setup
 - Ju and Inky accept Blackbird’s final trial / bargain: exist as a haunted Tree of Life and Death and bring him its Seed of Truth.
 - **Not their first casting:** Blackbird lets them retry until nothing remains to tether to. After a hundred failures, a fire took their last tree; they return hoping a splinter remains. If not, the Backstage stays closed forever.
-- **Public pitch (live):** After a hundred failures they return once more, hoping the fire that took their last tree left a splinter to tether into. If not, the Backstage stays closed forever.
+- **Public pitch (live):** After a hundred failures they return once more, hoping the fire that took their last tree left a splinter to tether into.
+- **Backstage forever-closed stakes** live on Mission — the Seed (don’t kill the tree in the process), not on the splinter pitch.
 - They arrive tethered to that splinter / broken branch from the tree.
 - The branch lands on Kehan’s narrowboat; Kehan tows them upstream.
 
@@ -63,8 +64,9 @@ Reference document for campaign copy and story tone. Last updated from author no
 - **Mission — the lock**  
   Figure out what opens the lock — and get waiting narrowboat guests through.  
   Young Kehan arrives at a mysterious abandoned lock that won't open, though every mechanism looks sound. Something at the Keep resists every guest — and every helper. Expand the reach of your tree to keep him company from your branches, as he works out what makes the lock open.
-- **Mission — the Seed** *(see live site)*  
-  Figure out how to make your tree birth a Seed of Truth. Tethered to a fallen branch / splinter by the Lock Keepers Cottage; choices shape the Yew and its willingness to deliver the Seed.
+- **Mission — the Seed**  
+  Figure out how to make your tree birth a Seed of Truth.  
+  Tethered to a scorched splinter, once again you take root by the Lock Keepers Cottage. Your choices shape the final form of your Yew-tree, and the mark it leaves on the Lock and its residents — as well as its willingness to deliver a Seed of Truth. Beware that you do not kill the tree in the process, or the Backstage will stay closed forever.
 - **What you tend (or overlook) can ricochet**  
   The Lock Keep asks much of whoever tends it and whoever seeks passage, and plays both for fools when they fall short. Mind every counsel you offer Kehan and guests looking for guidance.  
   Your haunting dictates whether the Lock Keep spirals into a cosy whimsical haven — or an eerie graveyard of narrowboats that never made it through.
