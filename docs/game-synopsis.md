@@ -10,8 +10,8 @@ Reference document for campaign copy and story tone. Last updated from author no
 
 ### Setup
 - Ju and Inky accept Blackbird’s final trial / bargain: exist as a haunted Tree of Life and Death and bring him its Seed of Truth.
-- **Not their first casting:** Blackbird lets them retry until nothing remains to tether to. After a hundred failures, a fire took their last tree; they return hoping a splinter remains. If not, the Backstage stays closed forever.
-- **Public pitch (live):** After a hundred failures they return once more, hoping the fire that took their last tree left a splinter to tether into.
+- **Not their first casting:** Blackbird lets them retry until nothing remains to tether to. After a first failure, a fire took their tree; they return hoping a splinter remains. If not, the Backstage stays closed forever.
+- **Public pitch (live):** After a first failure they return once more, hoping the fire that took their tree left a splinter to tether into.
 - **Backstage forever-closed stakes** live on Mission — the Seed (don’t kill the tree in the process), not on the splinter pitch.
 - They arrive tethered to that splinter / broken branch from the tree.
 - The branch lands on Kehan’s narrowboat; Kehan tows them upstream.
